@@ -27,3 +27,8 @@
 
 - 访问根节点
 - 对根节点的**没访问过的相邻节点**挨个进行深度优先遍历
+
+![VeryCapture_20221227182900](https://user-images.githubusercontent.com/26371465/209653245-3f8f5f1d-e5ee-48f4-b6e3-be3c4343adef.jpg)
+
+
+
