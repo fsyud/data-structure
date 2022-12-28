@@ -23,7 +23,11 @@
 
 
 
-### 深度优先遍历口诀
+### 深度优先遍历口诀![VeryCapture_20221227182900](https://user-images.githubusercontent.com/26371465/209754001-bc6f875b-646f-4c64-9b52-e909f38ab782.jpg)
+
 
 - 访问根节点
 - 对根节点的**没访问过的相邻节点**挨个进行深度优先遍历
+
+
+![VeryCapture_20221227182900](https://user-images.githubusercontent.com/26371465/209754008-7fd10b29-2fd7-4741-a085-75ccd2e05ac4.jpg)
