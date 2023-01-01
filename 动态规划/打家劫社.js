@@ -16,16 +16,53 @@
 // 解释：偷窃 1 号房屋 (金额 = 2), 偷窃 3 号房屋 (金额 = 9)，接着偷窃 5 号房屋 (金额 = 1)。
 //      偷窃到的最高金额 = 2 + 9 + 1 = 12 。
 
-// 提示：
+// 提示： 
 
 // 1 <= nums.length <= 100
 // 0 <= nums[i] <= 400
 // 通过次数674,233提交次数1,246,646
 
+// 解题思路
+// f(k) = 从前k个房屋中能偷窃到的最大数额
+// Ak = 第k个房屋的钱数
+// f(k) = max(f(k-2) + Ak, f(k-1))
+
 /**
  * @param {number[]} nums
  * @return {number}
  */
-var rob = function (nums) {
-    
+ var rob = function (nums) {
+    if (nums.length === 0) {
+        return 0;
+    }
+
+    const dp = [0, nums[0]]
+
+    for (let i = 2; i <= nums.length; i++) {
+        dp[i] = Math.max(dp[i - 2] + nums[i - 1], dp[i - 1])
+    }
+
+    return dp[nums.length]
+};
+
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var rob = function (nums) {
+    if (nums.length === 0) {
+        return 0;
+    }
+
+    const dp0 = 0;
+    const dp1 = nums[0]
+
+    for (let i = 2; i <= nums.length; i++) {
+        const dp2 = Math.max(dp0 + nums[i - 1], dp1)
+        dp0 = dp1;
+        dp1 = dp2;
+    }
+
+    return dp1;
 };
