@@ -11,3 +11,5 @@
 - 通常需要递归模拟所有的路
 
 # 全排列
+
+![VeryCapture_20230102215612](https://user-images.githubusercontent.com/26371465/210240829-f3e74417-4c37-48ca-9c18-89024c4c129b.jpg)
