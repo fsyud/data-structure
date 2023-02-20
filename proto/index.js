@@ -6,3 +6,4 @@
 const obj = {};
 const func = () => {};
 const arr = [];
+const arr1 = () => {}
